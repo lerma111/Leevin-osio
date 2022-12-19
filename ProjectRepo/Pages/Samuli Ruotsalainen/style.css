@@ -1,0 +1,263 @@
+/* 
+
+Bodyt joka sivulle(kaikille sivuille sama):
+*/
+/* font-style: normal;
+font-family: "Times New Roman", Times, serif;
+font-size: 25px;
+font-weight: 500; */
+
+/*  */
+/*
+#0F66A8  footer nav background ehdotus
+#F05A56  
+#3EA2F0  background color ehdotus
+#ECF026
+#A1A322 
+VARIKOODIT 
+*/
+
+/* Yleinen Tyylittely */
+@font-face {
+    font-family: "Sono";
+    src: url(../ProjectRepo/Pages/Fonts/Sono-VariableFont_MONO\,wght.ttf);
+}
+.offcanvas{
+    background-image: url(../../Index/Images/workplace-g4e36d3dde_1920.jpg);
+    background-size: cover;
+    color: black;
+}
+/* Uusittu frontlook 16.12.22*/
+#nomargin {
+    margin: 0;
+    background-image: url(../../Index/Images/puuHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: underline;
+    padding-top: 0.1vh;
+  }
+  #question-container{
+    padding: 1.5vh;
+  }
+  #menubutton {
+    font-size: 3em;
+    position: absolute;
+    top: 1vh;
+    margin-right: 5px;
+  }
+  
+
+  #navigaatio {
+    padding-left: 0.6vw;
+    padding-right: 0.6vw;
+  }
+
+  #footer {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(15, 102, 168, 0.7098039216);
+    margin-bottom: 2px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-image: url(../../Index/Images/puuHeader.jpg);
+    z-index: 0;
+    justify-content: center;
+    color: black;
+    font-weight: bolder;
+}
+#quiz-container {
+    margin-top: 20vh;
+}
+#number-of-right-answers{
+    margin-bottom: 0;
+    margin-top: 4vh
+}
+
+#explanation-div{
+    padding: 5vh;
+}
+   
+body {
+    font-family: "Sono";
+    font-weight: 500;
+    background-image: url(../../Index/Images/black-g4ec6f0509_1920.jpg);
+    width: 99vw;
+    color: white;
+}
+ /* Uusittu loppuu */
+a {
+    text-decoration: none;
+    color: white;
+}
+h1, p {
+    text-align: center;
+}
+.col {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #0f66a8b5;
+    margin: 2%;
+}
+.offcanvas h4 {
+    color: black;
+}
+
+/* Pelin tyylittely määritykset */
+
+#number-of-right-answers{
+    text-align: center;
+}
+#counter{
+    width: fit-content;
+    display: flex;
+    position: relative; left: 95%; top: 10px;
+}
+
+
+
+
+
+.quiz-container{
+    background-color: #0f66a8b5;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+.answer-div{
+    background-color: #3EA2F0 !important;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2%;
+    color: black;
+}
+
+.answer-div.wrong{
+    background-color: #FE2020 !important;
+}
+.answer-div.correct{
+    background-color: #3ef08b !important;
+}
+
+ #next-button, #home-button{
+    border: 2px solid black;
+    background-color: #3EA2F0;
+    border-radius: 5px;
+    width: max-content;
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.btnResponsiveSize{
+    margin-left: 0;
+    margin-top: 5%;
+    border: 2px solid black;
+    background-color: #3EA2F0;
+    border-radius: 5px;
+    width: max-content;
+}
+.btnResponsiveLook{
+    border: 2px solid black;
+    background-color: #3EA2F0;
+    border-radius: 5px;
+    width: max-content;
+}
+.transparent{
+    background-color: transparent;
+    border: none;
+}
+
+#explanation-div{
+    background-color: #0f66a8b5;
+    justify-content: center;
+}
+
+.answer-div:hover,#start-button:hover, #next-button:hover, #home-button:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+#homebutton-text{
+    color: black;
+    text-decoration: none;
+}
+.buffer-row{
+    height: 20vh;
+}
+#startcontainer{
+    width: 100vw;
+}
+@media screen and (max-width:1440px) {
+    .row2{
+        margin: 0;
+        padding: 5px;
+     }
+     @media screen and (max-width: 700px){
+        #menubutton{
+          top: 0.2vh;
+          left: 2vw;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        #start-button{
+            margin-left: 0;
+            margin-top: 15vh;
+        }
+        #menubutton{
+            top: 0.1vh;
+            left: 2vw;
+          }
+    }
+    @media screen and (max-width: 350px){
+        #footer{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 300px){
+        #menubutton{
+            font-size: 2em;
+        }
+    }
+    @media screen and (max-height: 730px) and (min-width:1200px){
+        #footer{
+            display: none;
+        }
+    }
+    @media screen and (max-height: 730px) and (min-width:1200px){
+        #footer{
+            display: none;
+        }
+    }
+    @media screen and (max-height: 650px){
+        #footer{
+            display: none;
+        }
+       
+        .btnResponsiveSize{
+            margin-top: 15%;
+        }
+    }
+    @media screen and (max-height: 560px){
+        #footer{
+            display: none;
+        }
+        #quiz-container{
+            margin-top: 12vh;
+        }
+    }
+    @media screen and (max-height:677px) and (max-width:375px){
+        #footer{
+            display: none;
+        }
+    }
+    @media screen and (max-height:800px) and (max-width:400px){
+        #footer{
+            display: none;
+        }
+    }
+}
